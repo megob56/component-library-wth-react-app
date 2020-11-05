@@ -1,5 +1,4 @@
 import React from 'react';
-import { useHistory } from "react-router-dom";
 import { CardMedia } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import MyButton from '../components/Button';
@@ -44,12 +43,6 @@ const useStyles = makeStyles(() => ({
 
 function Profile() {
   const classes = useStyles();
-  const history = useHistory();
-
-  const routeChange = () => {
-    let path = `/page`;
-    history.push(path);
-  }
 
   return (
     <div className={classes.profile}>
@@ -63,7 +56,7 @@ function Profile() {
       </div>
       <div className={classes.profileSettings}>
         <h1 className={classes.profileUserName}>Meaghan</h1>
-        <MyButton onClick={routeChange}>Hello World!</MyButton>
+        <MyButton />
       </div>
       <div className={classes.profileStats}>
         <ul>

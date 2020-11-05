@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from "react-router-dom";
 import Button from '@material-ui/core/Button';
 import { styled } from '@material-ui/core/styles';
 
@@ -12,8 +13,16 @@ function MyButton() {
     lineHeight: 2.5,
     padding: '0 35px',
   });
+
+  const history = useHistory();
+
+  const routeChange = () => {
+    let path = `/page`;
+    history.push(path);
+  }
+
   return (
-    <MyButton>Hello World!</MyButton>
+    <MyButton onClick={routeChange}>Hello World!</MyButton>
   )
 }
 
