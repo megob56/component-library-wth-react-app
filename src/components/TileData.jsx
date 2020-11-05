@@ -52,6 +52,18 @@ const tileDataArray = [
     featured: true,
   },
   {
+    img:'https://images.unsplash.com/photo-1520853290592-81017d2bde21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+    title: "Skiing",
+    author:"SFKFBB",
+    featured: true,
+  },
+  {
+    img:'https://images.unsplash.com/photo-1578584722938-d272fd3dd89c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+    title: "Snow",
+    author:"SFKFBB",
+    featured: true,
+  },
+  {
     img:'https://images.unsplash.com/photo-1583354344092-dcf7e164cab0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
     title: "Fenway Park",
     author:"SFKFBB",
@@ -76,20 +88,14 @@ const tileDataArray = [
     featured: true,
   },
   {
+    img:'https://images.unsplash.com/photo-1512919055121-bb04259a6188?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+    title: "Apple Picking",
+    author:"SFKFBB",
+    featured: true,
+  },
+  {
     img:'https://images.unsplash.com/photo-1543017094-f56b02c31b9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
     title: "Covered Bridge",
-    author:"SFKFBB",
-    featured: true,
-  },
-  {
-    img:'https://images.unsplash.com/photo-1520853290592-81017d2bde21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-    title: "Skiing",
-    author:"SFKFBB",
-    featured: true,
-  },
-  {
-    img:'https://images.unsplash.com/photo-1578584722938-d272fd3dd89c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-    title: "Snow",
     author:"SFKFBB",
     featured: true,
   },
@@ -117,37 +123,26 @@ const tileDataArray = [
     author:"SFKFBB",
     featured: true,
   },
+  {
+    img:'https://images.unsplash.com/photo-1563072140-03147ef5cf19?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+    title: "S'mores",
+    author:"SFKFBB",
+    featured: true,
+  },
+  {
+    img:'https://images.unsplash.com/photo-1530123985359-4fd0cce1ea8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    title: "Lighthouse",
+    author:"SFKFBB",
+    featured: true,
+  },
 ];
-
-// const useStyles = makeStyles((theme) => ({
-//   root: {
-//     display: 'flex',
-//     flexWrap: 'wrap',
-//     justifyContent: 'space-around',
-//     overflow: 'hidden',
-//     backgroundColor: theme.palette.background.paper,
-//   },
-//   gridList: {
-//     width: 500,
-//     height: 450,
-//     transform: 'translateZ(0)',
-//   },
-//   titleBar: {
-//     background:
-//       'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, ' +
-//       'rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)',
-//   },
-//   icon: {
-//     color: 'white',
-//   },
-// }));
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
   image: {
-    height: 450,
+    height: 425,
     width: 450,
   },
   control: {
@@ -185,29 +180,6 @@ function TileData() {
       </Grid>
     </Grid>
   )
-
-  // return (
-  //   <div className={classes.root}>
-  //     <GridList cellHeight={500} spacing={1} className={classes.gridList}>
-  //       {tileDataArray.map((tile) => (
-  //         <GridListTile key={tile.img} cols={tile.featured ? 2 : 1} rows={tile.featured ? 2 : 1}>
-  //           <img src={tile.img} alt={tile.title} />
-  //           <GridListTileBar
-  //             title={tile.title}
-  //             titlePosition="top"
-  //             actionIcon={
-  //               <IconButton aria-label={`star ${tile.title}`} className={classes.icon}>
-  //                 <StarBorderIcon />
-  //               </IconButton>
-  //             }
-  //             actionPosition="left"
-  //             className={classes.titleBar}
-  //           />
-  //         </GridListTile>
-  //       ))}
-  //     </GridList>
-  //   </div>
-  // )
 }
 
 export default TileData;
