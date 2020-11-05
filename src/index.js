@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Route, BrowserRouter as Router, Redirect, Switch } from "react-router-dom";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import './index.css';
-import Home from '../src/components/Home';
-import Page from '../src/components/Page';
+import Home from '../src/pages/Home';
+import Page from '../src/pages/Page';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(

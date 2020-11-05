@@ -8,6 +8,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    marginBottom: '5rem',
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -19,7 +20,7 @@ export default function NavBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="fixed" style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)'}}>
         <Toolbar variant="dense">
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon />

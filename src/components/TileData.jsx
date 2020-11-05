@@ -28,20 +28,8 @@ const tileDataArray = [
     featured: true,
   },
   {
-    img:'https://images.unsplash.com/photo-1558470814-6409f3cf43c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-    title: "Flag",
-    author:"FKDJSEB",
-    featured: true,
-  },
-  {
     img:'https://images.unsplash.com/photo-1502921982-f2471545c93b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
     title: "Boston",
-    author:"SFKFBB",
-    featured: true,
-  },
-  {
-    img:'https://images.unsplash.com/photo-1543336414-319b2b916cdb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-    title: "Boston Public Library",
     author:"SFKFBB",
     featured: true,
   },
@@ -52,14 +40,8 @@ const tileDataArray = [
     featured: true,
   },
   {
-    img:'https://images.unsplash.com/photo-1520853290592-81017d2bde21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-    title: "Skiing",
-    author:"SFKFBB",
-    featured: true,
-  },
-  {
-    img:'https://images.unsplash.com/photo-1578584722938-d272fd3dd89c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-    title: "Snow",
+    img:'https://images.unsplash.com/photo-1543336414-319b2b916cdb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+    title: "Boston Public Library",
     author:"SFKFBB",
     featured: true,
   },
@@ -82,6 +64,18 @@ const tileDataArray = [
     featured: true,
   },
   {
+    img:'https://images.unsplash.com/photo-1520853290592-81017d2bde21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+    title: "Skiing",
+    author:"SFKFBB",
+    featured: true,
+  },
+  {
+    img:'https://i.pinimg.com/originals/4a/a6/35/4aa635ffcefc105e01ccd43987aa30b8.jpg',
+    title: "Mount Washington",
+    author:"FKDJSEB",
+    featured: true,
+  },
+  {
     img:'https://images.unsplash.com/photo-1462117580841-44df9d9d23fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
     title: "Bean Boots",
     author:"SFKFBB",
@@ -100,8 +94,32 @@ const tileDataArray = [
     featured: true,
   },
   {
+    img:'https://newengland.com/wp-content/uploads/PleasantLake-Exterior-Patio-1.jpg',
+    title: "Adirondack Chairs",
+    author:"SFKFBB",
+    featured: true,
+  },
+  {
     img:'https://images.unsplash.com/photo-1503414382497-bfd17f3c2e41?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
     title: "Summer Noms",
+    author:"SFKFBB",
+    featured: true,
+  },
+  {
+    img:'https://www.spendwithpennies.com/wp-content/uploads/2018/01/New-England-Clam-Chowder-3.jpg',
+    title: "Clam Chowder",
+    author:"SFKFBB",
+    featured: true,
+  },
+  {
+    img:'https://lh3.googleusercontent.com/FnlEUHtf736wtNC-4Tm-LGFFJmjfzHsAXQNzc4zgG92Sd9_wI3jTAYZNFB6eY6JCZsm0y9Y8=w1080-h608-p-no-v0',
+    title: "Del's",
+    author:"SFKFBB",
+    featured: true,
+  },
+  {
+    img:'https://images.unsplash.com/photo-1563072140-03147ef5cf19?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+    title: "S'mores",
     author:"SFKFBB",
     featured: true,
   },
@@ -118,14 +136,8 @@ const tileDataArray = [
     featured: true,
   },
   {
-    img:'https://images.unsplash.com/photo-1580684744040-4b38f7f4c586?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    img:'https://www.boston.com/wp-content/uploads/2019/09/breakersmansion-850x478.jpg',
     title: "The Breakers",
-    author:"SFKFBB",
-    featured: true,
-  },
-  {
-    img:'https://images.unsplash.com/photo-1563072140-03147ef5cf19?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-    title: "S'mores",
     author:"SFKFBB",
     featured: true,
   },
@@ -135,31 +147,58 @@ const tileDataArray = [
     author:"SFKFBB",
     featured: true,
   },
+  {
+    img:'https://i.pinimg.com/originals/19/c1/52/19c15256011165b53009e8a4213941a0.jpg',
+    title: "Narragansett Beach",
+    author:"SFKFBB",
+    featured: true,
+  },
 ];
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
-  image: {
-    height: 425,
-    width: 450,
-  },
   control: {
     padding: theme.spacing(2),
   },
-  content: {
-    background:
-      'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, ' +
-      'rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)',
-    top: 0,
-    position: 'absolute',
+  // content: {
+  //   background:
+  //     'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, ' +
+  //     'rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)',
+  //   top: 0,
+  //   position: 'absolute',
+  // },
+   container: {
+    maxWidth: '93.5rem',
+    margin: '0 auto',
+    padding: '0 2rem',
+  },
+  gallery: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    margin: '-1rem -1rem',
+    paddingBottom: '3rem',
+  },
+  galleryItem: {
+    position: 'relative',
+    // flex: '1 0 22rem',
+    width: '350px',
+    height: '350px',
+    margin: '1rem',
+    color: '#fff',
+    cursor: 'pointer',
+  },
+  galleryImage: {
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
   },
 }));
 
 function TileData() {
   const classes = useStyles();
-  const [spacing, setSpacing] = React.useState(2);
+  const [spacing, setSpacing] = React.useState(1);
   const history = useHistory();
 
   const routeChange = () => {
@@ -168,17 +207,19 @@ function TileData() {
   }
 
   return (
-    <Grid container className={classes.root} spacing={0}>
-      <Grid item xs={12}>
-        <Grid container justify="center" spacing={spacing}>
-          {tileDataArray.map((tile) => (
-            <Grid key={tile.title} item>
-              <img className={classes.image} src={tile.img} alt={tile.title} onClick={routeChange} />
-            </Grid>
-          ))}
+    <div className={classes.container}>
+      <Grid container className={classes.root} spacing={0}>
+        <Grid item xs={12}>
+          <Grid container justify="center" spacing={spacing}>
+            {tileDataArray.map((tile) => (
+              <Grid key={tile.title} className={classes.galleryItem} item>
+                <img className={classes.galleryImage} src={tile.img} alt={tile.title} onClick={routeChange} />
+              </Grid>
+            ))}
+          </Grid>
         </Grid>
       </Grid>
-    </Grid>
+    </div>
   )
 }
 
