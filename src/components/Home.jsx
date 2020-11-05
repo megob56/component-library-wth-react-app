@@ -13,7 +13,7 @@ const useStyles = makeStyles(() => ({
   },
   profileImageDiv: {
     float: 'left',
-    width: 'calc(33.333% - 1rem)',
+    width: 'calc(15% - 1rem)',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -32,7 +32,7 @@ const useStyles = makeStyles(() => ({
     padding: '0 50px 0 0',
   },
   profileStats: {
-    marginTop: '2.3rem',
+    // marginTop: '2.3rem',
   },
   profileStatsList: {
     display: 'inline-block',
@@ -42,12 +42,12 @@ const useStyles = makeStyles(() => ({
   },
   profileBio: {
     float: 'left',
-    width: '(66.666% - 1rem)',
-    marginTop: '2.3rem',
+    width: '(80% - 1rem)',
+    // marginTop: '2.3rem',
   },
   gallery: {
-    display: 'block',
-    // flexWrap: 'wrap',
+    display: 'flex',
+    flexWrap: 'wrap',
     margin: '-1rem -1rem',
     paddingBottom: '3rem',
   },
