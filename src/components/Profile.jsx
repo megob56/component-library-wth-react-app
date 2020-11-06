@@ -6,8 +6,9 @@ import profPic from './assets/profile.jpg';
 
 const useStyles = makeStyles(() => ({
   profile: {
-    padding: '0rem 0 5rem 20rem',
+    // padding: '0rem 0 5rem 26rem',
     marginTop: '5rem',
+    marginBottom: '5rem',
   },
   profileImageDiv: {
     float: 'left',
