@@ -2,11 +2,6 @@ import React from 'react';
 import { useHistory } from "react-router-dom";
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-// import GridList from '@material-ui/core/GridList';
-// import GridListTile from '@material-ui/core/GridListTile';
-// import GridListTileBar from '@material-ui/core/GridListTileBar';
-// import IconButton from '@material-ui/core/IconButton';
-// import StarBorderIcon from '@material-ui/icons/StarBorder';
 
 const tileDataArray = [
   {
@@ -162,17 +157,10 @@ const useStyles = makeStyles((theme) => ({
   control: {
     padding: theme.spacing(2),
   },
-  // content: {
-  //   background:
-  //     'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, ' +
-  //     'rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)',
-  //   top: 0,
-  //   position: 'absolute',
-  // },
    container: {
     maxWidth: '93.5rem',
-    margin: '0 auto',
-    padding: '0 2rem',
+    margin: 'auto',
+    padding: '2rem',
   },
   gallery: {
     display: 'flex',
@@ -198,7 +186,6 @@ const useStyles = makeStyles((theme) => ({
 
 function TileData() {
   const classes = useStyles();
-  const [spacing, setSpacing] = React.useState(1);
   const history = useHistory();
 
   const routeChange = () => {
@@ -210,7 +197,7 @@ function TileData() {
     <div className={classes.container}>
       <Grid container className={classes.root} spacing={0}>
         <Grid item xs={12}>
-          <Grid container justify="center" spacing={spacing}>
+          <Grid container justify="center" spacing={1}>
             {tileDataArray.map((tile) => (
               <Grid key={tile.title} className={classes.galleryItem} item>
                 <img className={classes.galleryImage} src={tile.img} alt={tile.title} onClick={routeChange} />
