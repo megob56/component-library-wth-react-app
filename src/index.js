@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import Home from './pages/Home';
 import Page from './pages/Page';
+import LearnMore from './pages/LearnMore';
+import Shop from './pages/Shop';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -11,6 +13,8 @@ ReactDOM.render(
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/page" component={Page} />
+        <Route path="/learn-more" component={LearnMore} />
+        <Route path="/shop-showcase" component={Shop} />
       </Switch>
     </Router>
   </React.StrictMode>,

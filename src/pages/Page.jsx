@@ -5,7 +5,9 @@ function Page() {
 
   return (
     <>
-      <NavBar />
+      <div className="js-nav-bar-div" style={{marginBottom: '1rem', padding: '15px'}}>
+        <NavBar />
+      </div>
       <h1>Page</h1>
     </>
   )
